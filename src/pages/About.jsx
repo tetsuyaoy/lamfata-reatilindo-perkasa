@@ -7,10 +7,10 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25, ease: "easeOut" }}
-      className="pt-20"
+      className="pt-24"
     >
     <section className="bg-[url('/lamfata-reatilindo-perkasa/bhawin-jagad-GQgnlIrMGII-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end">
-      <div className="px-9 py-10 text-left">
+      <div className="px-9 py-10 text-left ml-30">
         <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

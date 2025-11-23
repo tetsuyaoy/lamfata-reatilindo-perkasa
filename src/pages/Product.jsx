@@ -7,7 +7,7 @@ export default function Product() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25, ease: "easeOut" }}
-      className="pt-24 max-w-7xl mx-auto px-6"
+      className="pt-44 max-w-7xl mx-auto px-6"
     >
       <h1 className="text-4xl font-bold text-blue-700 mb-10">Produk Kami</h1>
 
