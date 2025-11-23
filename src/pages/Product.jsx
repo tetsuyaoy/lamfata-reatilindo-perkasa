@@ -17,7 +17,7 @@ export default function Product() {
         transition={{ delay: 0.15 }}
         className="text-4xl md:text-5xl font-bold mb-40"
         >
-        products
+        Products
         </motion.h1>
       </div>
     </section>
