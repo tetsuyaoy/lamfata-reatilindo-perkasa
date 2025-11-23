@@ -9,7 +9,7 @@ export default function About() {
       transition={{ duration: 0.25, ease: "easeOut" }}
       className="pt-20"
     >
-    <section className="bg-[url('/bhawin-jagad-GQgnlIrMGII-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end">
+    <section className="bg-[url('/lamfata-reatilindo-perkasa/bhawin-jagad-GQgnlIrMGII-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end">
       <div className="px-9 py-10 text-left">
         <motion.h1
         initial={{ opacity: 0, y: 20 }}
