@@ -10,7 +10,7 @@ export default function About() {
       className="pt-24"
     >
     <section className="bg-[url('/lamfata-reatilindo-perkasa/bhawin-jagad-GQgnlIrMGII-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end">
-      <div className="px-9 py-10 text-left ml-30">
+      <div className="px-9 py-10 text-left ml-0 md:ml-30">
         <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,16 +19,6 @@ export default function About() {
         >
         About Us
         </motion.h1>
-
-        {/* <motion.a
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.38 }}
-        href="/product"
-        className="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg inline-block hover:bg-gray-100"
-        >
-        Lihat Produk
-        </motion.a> */}
       </div>
     </section>
 
@@ -70,14 +60,12 @@ export default function About() {
     <section className="max-w-7xl mx-auto px-6 py-20">
       <div className="grid md:grid-cols-2 gap-14">
 
-        {/* LEFT TITLE */}
         <div className="flex md:items-start items-center">
           <h2 className="text-3xl md:text-4xl font-bold leading-snug">
             Parent Company<br />Background
           </h2>
         </div>
 
-        {/* RIGHT CONTENT */}
         <div className="text-gray-700 space-y-5 leading-relaxed">
           <p>
             PT. Tunas Artha Pratama has been a trailblazer in the technology and
@@ -132,8 +120,7 @@ export default function About() {
     <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid md:grid-cols-3 gap-10 items-center">
 
-        {/* Text Section */}
-        <div className="md:col-span-2 flex flex-col justify-start">
+        <div className="md:col-span-2 flex flex-col justify-start order-2 md:order-1">
           <h2 className="text-4xl font-bold leading-tight">
             Mission
           </h2>
@@ -226,13 +213,13 @@ export default function About() {
         </div>
 
         {/* Image */}
-        <div className="relative w-full h-[600px] flex items-center justify-center">
+        <div className="relative w-full h-[400px] flex items-center justify-center order-1 md:order-2">
           <motion.img
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             src="mission-about.png"
-            className="w-[660px] h-[660px] object-contain md:w-[600px] md:h-[600px]"
+            className="w-[360px] h-[360px] object-contain md:w-[600px] md:h-[600px]"
           />
         </div>
 

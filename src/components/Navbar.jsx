@@ -8,9 +8,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isHome ? "bg-transparent text-white" : "bg-white text-blue-700 shadow-md"
-      }`}
+      className={`
+        fixed w-full top-0 z-50 transition-all duration-300
+        ${isHome
+          ? "md:bg-transparent md:text-white bg-white text-blue-700 shadow-md"
+          : "bg-white text-blue-700 shadow-md"
+        }
+      `}
     >
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-left">
         <NavLink to="/" className="flex items-center gap-3 mr-9">
@@ -55,17 +59,22 @@ export default function Navbar() {
         </ul>
 
         {/* hamburger */}
-        <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
+        <button
+          className="md:hidden text-2xl ml-auto"
+          onClick={() => setOpen(!open)}
+        >
           {open ? "✖" : "☰"}
         </button>
+
       </div>
 
       {/* mobile menu */}
       {open && (
         <div
-          className={`md:hidden px-6 py-4 border-t shadow transition-all duration-300 ${
-            isHome ? "bg-transparent text-white" : "bg-white text-blue-700"
-          }`}
+          className="
+            md:hidden px-6 py-4 border-t shadow transition-all duration-300
+            bg-white text-blue-700
+          "
         >
           <NavLink
             onClick={() => setOpen(false)}
@@ -83,6 +92,7 @@ export default function Navbar() {
           </NavLink>
         </div>
       )}
+
     </nav>
   );
 }

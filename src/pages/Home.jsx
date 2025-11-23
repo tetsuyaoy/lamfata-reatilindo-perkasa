@@ -10,7 +10,8 @@ export default function Home() {
       className="pt-20"
     >
         <section className="bg-[url('/lamfata-reatilindo-perkasa/marcin-jozwiak-oh0DITWoHi4-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end mt-[-80px]">
-            <div className="px-9 py-10 text-left ml-30">
+            <div className="px-9 py-10 text-left ml-0 md:ml-30">
+                
                 <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -28,18 +29,11 @@ export default function Home() {
                 >
                 Every Step of The Way
                 </motion.p>
-
-                {/* <motion.a
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.38 }}
-                href="/product"
-                className="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg inline-block hover:bg-gray-100"
-                >
-                Lihat Produk
-                </motion.a> */}
+                
             </div>
         </section>
+
+
         <section className="bg-gray-100 py-10">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-wrap items-center justify-center gap-8">

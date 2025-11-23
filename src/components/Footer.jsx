@@ -6,11 +6,11 @@ export default function Footer({ isHome }) {
 
       <div className="grid md:grid-cols-[2fr_1fr]">
 
-        <div className="bg-blue-800 text-white p-10 ">
-          <h3 className="text-2xl font-semibold mb-3 ml-30">
+        <div className="bg-blue-800 text-white p-10">
+          <h3 className="text-2xl font-semibold mb-3 ml-0 md:ml-30">
             Ready to bring your retail vision to life?
           </h3>
-          <p className="text-gray-200 ml-30">
+          <p className="text-gray-200 ml-0 md:ml-30">
             Join us in creating vibrant, customer-focused spaces that deliver real results.
           </p>
         </div>

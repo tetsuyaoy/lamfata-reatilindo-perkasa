@@ -10,7 +10,7 @@ export default function Product() {
       className="pt-24"
     >
     <section className="bg-[url('/lamfata-reatilindo-perkasa/carl-raw-s9rsYu-BYNo-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end">
-      <div className="px-9 py-10 text-left ml-30">
+      <div className="px-9 py-10 text-left ml-0 md:ml-30">
         <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
