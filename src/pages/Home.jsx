@@ -9,7 +9,7 @@ export default function Home() {
       transition={{ duration: 0.25, ease: "easeOut" }}
       className="pt-20"
     >
-        <section className="bg-[url('marcin-jozwiak-oh0DITWoHi4-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end mt-[-80px]">
+        <section className="bg-[url('/marcin-jozwiak-oh0DITWoHi4-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end mt-[-80px]">
             <div className="px-9 py-10 text-left">
                 <motion.h1
                 initial={{ opacity: 0, y: 20 }}
