@@ -43,7 +43,7 @@ export default function Footer({ isHome }) {
 
           <div className="text-gray-700 text-sm leading-relaxed">
             <img
-              src="LRP-Logo.png"
+              src="logo_lrp.png"
               alt="Logo"
               className="h-16 object-contain"
             />

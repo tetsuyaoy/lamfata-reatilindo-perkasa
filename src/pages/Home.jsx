@@ -9,7 +9,14 @@ export default function Home() {
       transition={{ duration: 0.25, ease: "easeOut" }}
       className="pt-20"
     >
-        <section className="bg-[url('/lamfata-reatilindo-perkasa/marcin-jozwiak-oh0DITWoHi4-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end mt-[-80px]">
+        <section
+            className="
+                bg-[url('/lamfata-reatilindo-perkasa/marcin-jozwiak-oh0DITWoHi4-unsplash.jpg')] 
+                bg-cover bg-center bg-fixed
+                text-white h-screen flex items-end mt-[-80px]
+            "
+            style={{ backgroundAttachment: "fixed" }}
+        >
             <div className="px-9 py-10 text-left ml-0 md:ml-30">
                 
                 <motion.h1
@@ -101,63 +108,188 @@ export default function Home() {
         <section className="max-w-7xl mx-auto px-6 py-16">
             <div className="grid md:grid-cols-2 gap-10 items-center">
 
-                {/* <div className="relative w-full h-[500px] flex items-center justify-center">
+                <div className="relative w-full h-[600px] sm:h-[550px] md:h-[500px] flex items-center justify-center">
 
+                    {/* IMAGE 1 */}
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
+                        animate={{ y: [0, -15, 0], rotate: [0, 2, 0] }}
+                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
                         viewport={{ once: true }}
                         src="alex-hudson-m3I92SgM3Mk-unsplash.jpg"
-                        className="absolute top-5 left-10 w-48 h-48 object-cover rounded-full shadow-lg"
+                        className="
+                            absolute 
+                            top-8 left-6 
+                            w-24 h-24 
+                            sm:w-32 sm:h-32
+                            md:w-48 md:h-48
+                            object-cover rounded-full shadow-lg
+                        "
                     />
-                    <div className="absolute top-10 left-5 w-10 h-10 bg-blue-700 rounded-full"></div>
 
+                    {/* BLUE CIRCLE 1 */}
+                    <motion.div
+                        animate={{ y: [0, -12, 0], rotate: [0, 360] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+                        className="
+                            absolute 
+                            top-10 left-10 
+                            w-6 h-6 
+                            sm:w-8 sm:h-8 
+                            md:w-10 md:h-10
+                            bg-blue-700 rounded-full
+                        "
+                    />
+
+                    {/* loby kanan atas */}
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
+                        animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
                         viewport={{ once: true }}
                         src="heidi-fin-2TLREZi7BUg-unsplash.jpg"
-                        className="absolute top-10 right-60 w-26 h-26 object-cover rounded-full shadow-lg"
+                        className="
+                            absolute 
+                            top-10 right-50 
+                            w-20 h-20
+                            sm:w-24 sm:h-24
+                            md:w-28 md:h-28
+                            object-cover rounded-full shadow-lg
+                        "
                     />
-                    <div className="absolute top-30 right-50 w-10 h-10 bg-blue-700 rounded-full"></div>
 
+                    {/* BLUE CIRCLE 2 */}
+                    <motion.div
+                        animate={{ y: [0, -15, 0], rotate: [-10, 10, -10] }}
+                        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                        className="
+                            absolute
+                            top-36 right-40
+                            w-6 h-6
+                            sm:w-8 sm:h-8
+                            md:w-10 md:h-10
+                            bg-blue-700 rounded-full
+                        "
+                    />
+
+                    {/* truck */}
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
+                        animate={{ y: [0, -65, 0], rotate: [0, 2, 0] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
                         src="dominik-vanyi-1HEDPbH6HIE-unsplash.jpg"
-                        className="absolute top-40 right-50 w-42 h-42 object-cover rounded-full shadow-lg"
+                        className="
+                            absolute 
+                            top-40 right-40
+                            w-28 h-28 
+                            sm:w-32 sm:h-32
+                            md:w-40 md:h-40
+                            object-cover rounded-full shadow-lg
+                        "
                     />
 
+                    {/* gudang */}
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
+                        animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
                         viewport={{ once: true }}
                         src="chuttersnap-BNBA1h-NgdY-unsplash.jpg"
-                        className="absolute bottom-5 left-8 w-55 h-55 object-cover rounded-full shadow-lg"
+                        className="
+                            absolute 
+                            bottom-10 left-10
+                            w-36 h-36
+                            sm:w-44 sm:h-44
+                            md:w-52 md:h-52
+                            object-cover rounded-full shadow-lg
+                        "
                     />
-                    <div className="absolute top-48 left-38 w-25 h-25 bg-orange-500 rounded-full"></div>
 
-                    <div className="absolute bottom-10 right-130 w-10 h-10 bg-orange-500 rounded-full"></div>
+                    {/* ORANGE CIRCLE 1 */}
+                    <motion.div
+                        animate={{ y: [0, -18, 0], rotate: [0, -360] }}
+                        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+                        className="
+                            absolute 
+                            top-[240px] left-20
+                            w-14 h-14
+                            sm:w-16 sm:h-16
+                            md:w-20 md:h-20
+                            bg-orange-500 rounded-full
+                        "
+                    />
 
+                    {/* ORANGE CIRCLE 2 */}
+                    <motion.div
+                        animate={{ y: [0, -10, 0], rotate: [0, 360] }}
+                        transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+                        className="
+                            absolute 
+                            bottom-20 right-42
+                            w-6 h-6
+                            sm:w-8 sm:h-8
+                            md:w-10 md:h-10
+                            bg-orange-500 rounded-full
+                        "
+                    />
+
+                    {/* gambar cip */}
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
+                        animate={{ y: [0, -25, 0], rotate: [0, -2, 0] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
                         viewport={{ once: true }}
                         src="adi-goldstein-EUsVwEOsblE-unsplash.jpg"
-                        className="absolute bottom-45 left-10 w-23 h-23 object-cover rounded-full shadow-lg"
+                        className="
+                            absolute 
+                            bottom-60 left-43
+                            w-20 h-20
+                            sm:w-24 sm:h-24
+                            md:w-24 md:h-24
+                            object-cover rounded-full shadow-lg
+                        "
                     />
 
+                    {/* gambar kanan bawah */}
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
+                        animate={{ y: [0, -65, 0], rotate: [0, 5, 0] }}
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
                         src="ian-battaglia-9drS5E_Rguc-unsplash.jpg"
-                        className="absolute bottom-25 right-58 w-23 h-23 object-cover rounded-full shadow-lg"
+                        className="
+                            absolute 
+                            bottom-16 right-50
+                            w-20 h-20
+                            sm:w-24 sm:h-24
+                            md:w-24 md:h-24
+                            object-cover rounded-full shadow-lg
+                        "
                     />
-                    <div className="absolute bottom-10 left-55 w-22 h-22 bg-blue-800 rounded-full"></div>
-                </div> */}
-                <div className="relative w-full h-[500px] flex items-center justify-center">
+
+                    {/* BLUE CIRCLE 3 */}
+                    <motion.div
+                        animate={{ y: [0, -15, 0], rotate: [10, -10, 10] }}
+                        transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+                        className="
+                            absolute 
+                            bottom-8 left-56
+                            w-14 h-14
+                            sm:w-16 sm:h-16
+                            md:w-20 md:h-20
+                            bg-blue-800 rounded-full
+                        "
+                    />
+
+                </div>
+
+
+                {/* <div className="relative w-full h-[500px] flex items-center justify-center">
                     <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -165,7 +297,7 @@ export default function Home() {
                         src="home-totol.png"
                         className="absolute top-10 w-[500px] h-[500px] object-contain "
                     />
-                </div>
+                </div> */}
 
                 <div>
                     <h2 className="text-4xl font-bold leading-tight">
@@ -304,34 +436,6 @@ export default function Home() {
 
             </div>
         </section>
-
-
-        {/* <section className="max-w-7xl mx-auto px-6 py-16">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-            <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                src="/logo.png"
-                className="w-full"
-            />
-            <div>
-                <h2 className="text-3xl font-bold mb-4 text-blue-700">
-                Tentang Kami
-                </h2>
-                <p className="text-gray-600 leading-relaxed">
-                PT Lamfata Reatilindo Perkasa adalah perusahaan distributor berbagai
-                produk kebutuhan industri dan rumah tangga dengan kualitas terbaik.
-                </p>
-                <a
-                href="/about"
-                className="inline-block mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
-                >
-                Selengkapnya
-                </a>
-            </div>
-            </div>
-        </section> */}
     </motion.div>
   );
 }
