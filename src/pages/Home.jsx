@@ -117,7 +117,7 @@ export default function Home() {
                         animate={{ y: [0, -15, 0], rotate: [0, 2, 0] }}
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
                         viewport={{ once: true }}
-                        src="alex-hudson-m3I92SgM3Mk-unsplash.jpg"
+                        src="alex-hudson-m3I92SgM3Mk-unsplash.jpeg"
                         className="
                             absolute 
                             top-8 left-6 
@@ -149,7 +149,7 @@ export default function Home() {
                         animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
                         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
                         viewport={{ once: true }}
-                        src="heidi-fin-2TLREZi7BUg-unsplash.jpg"
+                        src="heidi-fin-2TLREZi7BUg-unsplash.jpeg"
                         className="
                             absolute 
                             top-10 right-50 
@@ -180,7 +180,7 @@ export default function Home() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         animate={{ y: [0, -65, 0], rotate: [0, 2, 0] }}
                         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-                        src="dominik-vanyi-1HEDPbH6HIE-unsplash.jpg"
+                        src="dominik-vanyi-1HEDPbH6HIE-unsplash.jpeg"
                         className="
                             absolute 
                             top-40 right-40
@@ -198,7 +198,7 @@ export default function Home() {
                         animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
                         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
                         viewport={{ once: true }}
-                        src="chuttersnap-BNBA1h-NgdY-unsplash.jpg"
+                        src="chuttersnap-BNBA1h-NgdY-unsplash.jpeg"
                         className="
                             absolute 
                             bottom-10 left-10
@@ -244,7 +244,7 @@ export default function Home() {
                         animate={{ y: [0, -25, 0], rotate: [0, -2, 0] }}
                         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
                         viewport={{ once: true }}
-                        src="adi-goldstein-EUsVwEOsblE-unsplash.jpg"
+                        src="adi-goldstein-EUsVwEOsblE-unsplash.jpeg"
                         className="
                             absolute 
                             bottom-60 left-43
@@ -261,7 +261,7 @@ export default function Home() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         animate={{ y: [0, -65, 0], rotate: [0, 5, 0] }}
                         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                        src="ian-battaglia-9drS5E_Rguc-unsplash.jpg"
+                        src="ian-battaglia-9drS5E_Rguc-unsplash.jpeg"
                         className="
                             absolute 
                             bottom-16 right-50
@@ -339,9 +339,92 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-14">
                 
                 <div className="text-center flex flex-col items-center">
-                    <div className="relative w-full h-[600px] flex justify-center">
+                    <div className="relative w-full h-[600px] sm:h-[550px] md:h-[500px] flex items-center justify-center">
 
-                        {/* <motion.img
+                        {/* MARKET */}
+                        <motion.img
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            animate={{ y: [0, -65, 0], rotate: [0, 2, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+                            src="products-and-service-market.jpeg"
+                            className="
+                            absolute 
+                            top-[25%] right-[20%]
+                            w-28 h-28
+                            sm:w-40 sm:h-40
+                            md:w-52 md:h-52
+                            object-cover rounded-full shadow-lg
+                            "
+                        />
+
+                        {/* MALL */}
+                        <motion.img
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                            src="products-and-service-mall.jpeg"
+                            className="
+                            absolute 
+                            bottom-[25%] left-[25%]
+                            w-16 h-16
+                            sm:w-24 sm:h-24
+                            md:w-32 md:h-32
+                            object-cover rounded-full shadow-lg
+                            "
+                        />
+
+                        {/* ORANGE CIRCLE */}
+                        <motion.div
+                            animate={{ y: [0, -18, 0], rotate: [0, -360] }}
+                            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+                            className="
+                            absolute 
+                            top-[80%] left-[35%]
+                            w-10 h-10
+                            sm:w-14 sm:h-14
+                            md:w-10 md:h-10
+                            bg-orange-500 rounded-full
+                            "
+                        />
+
+                        {/* pasar */}
+                        <motion.img
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            animate={{ y: [0, -35, 0], rotate: [0, 5, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                            src="products-and-service-pasar.jpeg"
+                            className="
+                            absolute 
+                            bottom-[0%] right-[30%]
+                            w-16 h-16
+                            sm:w-24 sm:h-24
+                            md:w-32 md:h-32
+                            object-cover rounded-full shadow-lg
+                            "
+                        />
+
+                        {/* BLUE CIRCLE */}
+                        <motion.div
+                            animate={{ y: [0, -15, 0], rotate: [10, -10, 10] }}
+                            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+                            className="
+                            absolute 
+                            bottom-[30%] right-[15%]
+                            w-8 h-8
+                            sm:w-12 sm:h-12
+                            md:w-12 md:h-12
+                            bg-blue-800 rounded-full
+                            "
+                        />
+
+                    </div>
+
+                    {/* <div className="relative w-full h-[600px] flex justify-center">
+
+                        <motion.img
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -366,7 +449,7 @@ export default function Home() {
                         />
 
                         <div className="absolute top-36 right-14 w-8 h-8 bg-blue-700 rounded-full"></div>
-                        <div className="absolute bottom-6 left-36 w-6 h-6 bg-orange-500 rounded-full"></div> */}
+                        <div className="absolute bottom-6 left-36 w-6 h-6 bg-orange-500 rounded-full"></div>
                         <motion.img
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -374,7 +457,7 @@ export default function Home() {
                             src="products-and-service1.png"
                             className="absolute top-10 w-[500px] h-[500px] object-contain "
                         />
-                    </div>
+                    </div> */}
 
                     <h3 className="text-xl font-bold mt-6">
                         Retail Management & Operations
@@ -386,44 +469,89 @@ export default function Home() {
                 </div>
 
                 <div className="text-center flex flex-col items-center">
+                    <div className="relative w-full h-[600px] sm:h-[550px] md:h-[500px] flex items-center justify-center">
 
-                    <div className="relative w-full h-[600px] flex justify-center">
-
-                        {/* <motion.img
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        src="/img/tech-main.jpg"
-                        className="absolute top-0 w-[260px] h-[260px] rounded-full object-cover shadow-lg"
-                        />
-
-                        <motion.img
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        src="/img/tech-2.jpg"
-                        className="absolute bottom-2 right-20 w-32 h-32 rounded-full object-cover shadow-lg"
-                        />
-
-                        <motion.img
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        src="/img/tech-3.jpg"
-                        className="absolute top-24 -right-5 w-28 h-28 rounded-full object-cover shadow-lg"
-                        />
-
-                        <div className="absolute top-36 left-14 w-8 h-8 bg-blue-700 rounded-full"></div>
-                        <div className="absolute bottom-6 right-36 w-6 h-6 bg-orange-500 rounded-full"></div> */}
-                        
+                        {/* MOTHERBOARD */}
                         <motion.img
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            src="products-and-service2.png"
-                            className="absolute top-10 w-[500px] h-[500px] object-contain "
+                            animate={{ y: [0, -35, 0], rotate: [0, 5, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+                            src="products-and-service-motherboard.jpeg"
+                            className="
+                            absolute 
+                            bottom-[0%] right-[25%]
+                            w-36 h-36
+                            sm:w-44 sm:h-44
+                            md:w-52 md:h-52
+                            object-cover rounded-full shadow-lg
+                            "
                         />
+
+                        {/* CODE */}
+                        <motion.img
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                            src="products-and-service-code.jpeg"
+                            className="
+                            absolute 
+                            bottom-[30%] left-[18%]
+                            w-16 h-16
+                            sm:w-24 sm:h-24
+                            md:w-32 md:h-32
+                            object-cover rounded-full shadow-lg
+                            "
+                        />
+
+                        {/* ORANGE CIRCLE */}
+                        <motion.div
+                            animate={{ y: [0, -18, 0], rotate: [0, -360] }}
+                            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+                            className="
+                            absolute 
+                            top-[75%] left-[25%]
+                            w-12 h-12
+                            sm:w-14 sm:h-14
+                            md:w-10 md:h-10
+                            bg-orange-500 rounded-full
+                            "
+                        />
+
+                        {/* FAN CPU */}
+                        <motion.img
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            animate={{ y: [0, -35, 0], rotate: [0, 2, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                            src="products-and-service-fan-cpu.jpeg"
+                            className="
+                            absolute 
+                            top-[20%] right-[30%]
+                            w-16 h-16
+                            sm:w-24 sm:h-24
+                            md:w-32 md:h-32
+                            object-cover rounded-full shadow-lg
+                            "
+                        />
+
+                        {/* BLUE CIRCLE */}
+                        <motion.div
+                            animate={{ y: [0, -15, 0], rotate: [10, -10, 10] }}
+                            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+                            className="
+                            absolute 
+                            bottom-[40%] right-[18%]
+                            w-8 h-8
+                            sm:w-12 sm:h-12
+                            md:w-12 md:h-12
+                            bg-blue-800 rounded-full
+                            "
+                        />
+
                     </div>
+
 
                     <h3 className="text-xl font-bold mt-6">
                         Technology Solutions

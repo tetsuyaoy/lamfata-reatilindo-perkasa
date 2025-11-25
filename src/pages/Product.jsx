@@ -9,7 +9,9 @@ export default function Product() {
       transition={{ duration: 0.25, ease: "easeOut" }}
       className="pt-24"
     >
-    <section className="bg-[url('/lamfata-reatilindo-perkasa/carl-raw-s9rsYu-BYNo-unsplash.jpg')] bg-cover bg-center text-white h-screen flex items-end">
+    <section className="bg-[url('/lamfata-reatilindo-perkasa/carl-raw-s9rsYu-BYNo-unsplash.jpg')] bg-cover bg-center bg-fixed text-white h-screen flex items-end mt-[-80px]"
+      style={{ backgroundAttachment: "fixed" }}
+    >
       <div className="px-9 py-10 text-left ml-0 md:ml-30">
         <motion.h1
         initial={{ opacity: 0, y: 20 }}
@@ -25,7 +27,7 @@ export default function Product() {
     <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid md:grid-cols-3 gap-10 items-center">
 
-        <div className="relative w-full h-[300px] flex items-center justify-center">
+        {/* <div className="relative w-full h-[300px] flex items-center justify-center">
           <motion.img
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -33,6 +35,89 @@ export default function Product() {
             src="retail-management-product.png"
             className="w-[200px] h-[200px] object-contain md:w-[400px] md:h-[400px]"
           />
+        </div> */}
+
+        <div className="relative w-full h-[600px] sm:h-[550px] md:h-[500px] flex items-center justify-center">
+
+          {/* MARKET */}
+          <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ y: [0, -65, 0], rotate: [0, 2, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+              src="products-and-service-market.jpeg"
+              className="
+              absolute 
+              top-[10%] right-[20%]
+              w-28 h-28
+              sm:w-40 sm:h-40
+              md:w-52 md:h-52
+              object-cover rounded-full shadow-lg
+              "
+          />
+
+          {/* MALL */}
+          <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+              src="products-and-service-mall.jpeg"
+              className="
+              absolute 
+              bottom-[25%] left-[5%]
+              w-16 h-16
+              sm:w-24 sm:h-24
+              md:w-32 md:h-32
+              object-cover rounded-full shadow-lg
+              "
+          />
+
+          {/* ORANGE CIRCLE */}
+          <motion.div
+              animate={{ y: [0, -18, 0], rotate: [0, -360] }}
+              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+              className="
+              absolute 
+              top-[80%] left-[15%]
+              w-10 h-10
+              sm:w-14 sm:h-14
+              md:w-10 md:h-10
+              bg-orange-500 rounded-full
+              "
+          />
+
+          {/* pasar */}
+          <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ y: [0, -35, 0], rotate: [0, 5, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              src="products-and-service-pasar.jpeg"
+              className="
+              absolute 
+              bottom-[0%] right-[30%]
+              w-16 h-16
+              sm:w-24 sm:h-24
+              md:w-32 md:h-32
+              object-cover rounded-full shadow-lg
+              "
+          />
+
+          {/* BLUE CIRCLE */}
+          <motion.div
+              animate={{ y: [0, -15, 0], rotate: [10, -10, 10] }}
+              transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+              className="
+              absolute 
+              bottom-[30%] right-[25%]
+              w-8 h-8
+              sm:w-12 sm:h-12
+              md:w-12 md:h-12
+              bg-blue-800 rounded-full
+              "
+          />
+
         </div>
 
         <div className="md:col-span-2 flex flex-col justify-start">
@@ -112,7 +197,7 @@ export default function Product() {
         </div>
 
         {/* Image */}
-        <div className="relative w-full h-[500px] flex items-center justify-center">
+        {/* <div className="relative w-full h-[500px] flex items-center justify-center">
           <motion.img
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -120,7 +205,89 @@ export default function Product() {
             src="technology-solutions-product.png"
             className="w-[560px] h-[560px] object-contain md:w-[560px] md:h-[560px]"
           />
-        </div>
+        </div> */}
+        <div className="relative w-full h-[600px] sm:h-[550px] md:h-[500px] flex items-center justify-center">
+
+          {/* MOTHERBOARD */}
+          <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ y: [0, -35, 0], rotate: [0, 5, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+              src="products-and-service-motherboard.jpeg"
+              className="
+              absolute 
+              bottom-[0%] right-[5%]
+              w-36 h-36
+              sm:w-44 sm:h-44
+              md:w-52 md:h-52
+              object-cover rounded-full shadow-lg
+              "
+          />
+
+          {/* CODE */}
+          <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ y: [0, -25, 0], rotate: [0, -5, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+              src="products-and-service-code.jpeg"
+              className="
+              absolute 
+              bottom-[30%] left-[10%]
+              w-16 h-16
+              sm:w-24 sm:h-24
+              md:w-32 md:h-32
+              object-cover rounded-full shadow-lg
+              "
+          />
+
+          {/* ORANGE CIRCLE */}
+          <motion.div
+              animate={{ y: [0, -18, 0], rotate: [0, -360] }}
+              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+              className="
+              absolute 
+              top-[75%] left-[25%]
+              w-12 h-12
+              sm:w-14 sm:h-14
+              md:w-10 md:h-10
+              bg-orange-500 rounded-full
+              "
+          />
+
+          {/* FAN CPU */}
+          <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ y: [0, -35, 0], rotate: [0, 2, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+              src="products-and-service-fan-cpu.jpeg"
+              className="
+              absolute 
+              top-[20%] right-[30%]
+              w-16 h-16
+              sm:w-24 sm:h-24
+              md:w-32 md:h-32
+              object-cover rounded-full shadow-lg
+              "
+          />
+
+          {/* BLUE CIRCLE */}
+          <motion.div
+              animate={{ y: [0, -15, 0], rotate: [10, -10, 10] }}
+              transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+              className="
+              absolute 
+              bottom-[45%] right-[18%]
+              w-8 h-8
+              sm:w-12 sm:h-12
+              md:w-12 md:h-12
+              bg-blue-800 rounded-full
+              "
+          />
+
+      </div>
 
       </div>
     </section>

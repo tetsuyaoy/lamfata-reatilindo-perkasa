@@ -94,7 +94,7 @@ export default function About() {
     <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid md:grid-cols-3 gap-10 items-center">
 
-        <div className="relative w-full h-[400px] flex items-center justify-center">
+        {/* <div className="relative w-full h-[400px] flex items-center justify-center">
           <motion.img
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -102,7 +102,65 @@ export default function About() {
             src="vision-about.png"
             className="w-[260px] h-[260px] object-contain md:w-[300px] md:h-[300px]"
           />
+        </div> */}
+
+        <div className="relative w-full h-[600px] sm:h-[550px] md:h-[500px] flex items-center justify-center">
+
+          {/* IMAGE CENTER */}
+          <motion.img
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            src="products-and-service-market.jpeg"
+            className="
+              absolute
+              top-[55%] left-[50%]
+              -translate-x-1/2 -translate-y-1/2
+              w-36 h-36
+              sm:w-44 sm:h-44
+              md:w-50 md:h-50
+              object-cover rounded-full shadow-lg
+            "
+          />
+
+          {/* ORBIT CONTAINER */}
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+            className="
+              absolute
+              top-1/2 left-1/2
+              -translate-x-1/2 -translate-y-1/2
+              w-[250px] h-[250px]
+              sm:w-[300px] sm:h-[300px]
+              md:w-[350px] md:h-[350px]
+              rounded-full
+            "
+          >
+            {/* ORANGE CIRCLE */}
+            <div
+              className="
+                absolute
+                top-0 left-1/2
+                -translate-x-1/2
+                w-10 h-10 sm:w-12 sm:h-12 md:w-12 md:h-12
+                bg-orange-500 rounded-full
+              "
+            ></div>
+
+            {/* BLUE CIRCLE */}
+            <div
+              className="
+                absolute
+                bottom-0 left-1/2
+                -translate-x-1/2
+                w-10 h-10 sm:w-12 sm:h-12 md:w-12 md:h-12
+                bg-blue-800 rounded-full
+              "
+            ></div>
+          </motion.div>
+
         </div>
+
 
         <div className="md:col-span-2 flex flex-col justify-start">
           <h2 className="text-4xl font-bold leading-tight">
