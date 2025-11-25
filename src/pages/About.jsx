@@ -113,7 +113,7 @@ export default function About() {
             src="products-and-service-market.jpeg"
             className="
               absolute
-              top-[55%] left-[50%]
+              top-[50%] left-[50%]
               -translate-x-1/2 -translate-y-1/2
               w-36 h-36
               sm:w-44 sm:h-44
